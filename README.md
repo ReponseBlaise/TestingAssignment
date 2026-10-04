@@ -1,3 +1,6 @@
+# Mushimiyumukiza Blaise
+# 26229
+# Software Testing Techniques
 # Organization X - Employee Management and Payroll System
 
 Java implementation of the assignment scenario: managing employees, processing their
