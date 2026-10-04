@@ -2,20 +2,6 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
 
-/**
- * Organization X - Employee Management and Payroll System.
- *
- * One file holding both the program under test and its 20 automated test cases
- * (10 black-box, 10 white-box). Run it to execute the tests.
- *
- * Pay rules:
- *   hourly rate = salary / 160;  overtime = overtime hours * hourly rate * 1.5
- *   gross pay   = regular pay + overtime pay
- *   bonus       = 10% of gross pay for Management, else 0
- *   taxable pay = gross pay + bonus
- *   tax         = 25% of taxable pay when it is >= 5000, else 15%
- *   net pay     = taxable pay - tax
- */
 public class EmployeeManagementSystem {
 
     static final double STANDARD_MONTHLY_HOURS = 160.0;
@@ -181,10 +167,6 @@ public class EmployeeManagementSystem {
                 : String.format("Top earner: %s (%s) at %.2f", top.name, top.id, payments.get(top.id).net));
         return r.toString();
     }
-
-    // ------------------------------------------------------------------
-    // Test suite: 10 black-box cases followed by 10 white-box cases.
-    // ------------------------------------------------------------------
 
     static int passed, failed;
 
